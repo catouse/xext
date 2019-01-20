@@ -50,8 +50,16 @@ declare interface Xext {
     views: Xuanxuan.Views;
 }
 
-/**
- * 如果为 true，表示当前代码运行为调试模式，否则为正常模式
- * @type {boolean}
- */
-declare const DEBUG: boolean;
+declare namespace NodeJS {
+    interface Global {
+        /**
+         * 全局扩展访问对象
+         */
+        Xext: Xext;
+
+        /**
+         * 如果为 true，表示当前代码运行为调试模式，否则为正常模式
+         */
+        DEBUG: boolean;
+    }
+}

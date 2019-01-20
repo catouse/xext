@@ -6,10 +6,21 @@ module.exports = function(env, argv) {
     return {
         mode: env.production ? 'production' : 'development',
 
-        entry: './src/index.ts',
+        entry: {
+            index: './src/index.ts',
+            debug: './src/debug.ts',
+            lang: './src/lang.ts',
+            'node-modules': './src/node-modules.ts',
+            react: './src/react.ts',
+            components: './src/components.ts',
+            utils: './src/utils.ts',
+            platform: './src/platform.ts',
+            app: './src/app.ts',
+            views: './src/views.ts',
+        },
         output: {
-            path: path.resolve(__dirname, 'dist'),
-            filename: 'index.js',
+            path: path.resolve(__dirname, 'lib'),
+            filename: '[name].js',
             library: pkg.name,
             libraryTarget: "commonjs2"
         },

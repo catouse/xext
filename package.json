@@ -1,12 +1,16 @@
 {
   "name": "xext",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A helper module writen in typescript for build xuanxuan extension.",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "files": [
+    "./lib/**/*"
+  ],
+  "typings": "./lib/index.d.ts",
   "scripts": {
     "dev-watch": "webpack --env.development --watch --colors",
     "dev": "webpack --env.development --colors",
-    "dist": "webpack --env.production --colors",
+    "lib": "webpack --env.production --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
