@@ -1,0 +1,34 @@
+{
+  "name": "xext",
+  "version": "1.0.0",
+  "description": "A helper module writen in typescript for build xuanxuan extension.",
+  "main": "index.js",
+  "scripts": {
+    "dev-watch": "webpack --env.development --watch --colors",
+    "dev": "webpack --env.development --colors",
+    "dist": "webpack --env.production --colors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catouse/xext.git"
+  },
+  "author": "Catouse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/catouse/xext/issues"
+  },
+  "homepage": "https://github.com/catouse/xext#readme",
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "source-map-loader": "^0.2.4",
+    "typescript": "^3.2.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.1"
+  },
+  "dependencies": {
+    "@types/react-dom": "^16.0.11",
+    "@types/node": "^10.12.18",
+    "@types/react": "^16.7.20"
+  }
+}
