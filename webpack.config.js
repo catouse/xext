@@ -2,7 +2,7 @@ const path = require('path');
 const pkg = require('./package.json');
 
 module.exports = function(env, argv) {
-    const isDevelopment = env.production;
+    const isDevelopment = !env.production;
     return {
         mode: env.production ? 'production' : 'development',
 
