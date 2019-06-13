@@ -1,6 +1,6 @@
 {
   "name": "xext",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A helper module writen in typescript for build xuanxuan extension.",
   "main": "lib/index.js",
   "files": [
