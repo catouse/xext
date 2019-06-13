@@ -2,5 +2,5 @@
 /**
  * 界面视图库
  */
-export declare const views: Xuanxuan.Views;
-export default views;
+export declare const getViews: () => Xuanxuan.Views;
+export default getViews;

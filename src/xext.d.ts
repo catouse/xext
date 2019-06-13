@@ -48,6 +48,11 @@ declare interface Xext {
      * 界面视图库
      */
     views: Xuanxuan.Views;
+
+    /**
+     * 获取界面视图库
+     */
+    getViews(): Xuanxuan.Views;
 }
 
 declare namespace NodeJS {

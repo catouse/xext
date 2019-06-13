@@ -3,6 +3,6 @@
 /**
  * 界面视图库
  */
-export const views = global.Xext.views;
+export const getViews = global.Xext.getViews;
 
-export default views;
+export default getViews;
