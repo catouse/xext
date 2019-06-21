@@ -9,6 +9,7 @@
 /// <reference path="./views.d.ts" />
 /// <reference path="./events.d.ts" />
 /// <reference path="./exts.d.ts" />
+/// <reference path="./config.d.ts" />
 
 /**
  * 全局扩展模块
@@ -49,6 +50,11 @@ declare interface Xext {
      */
     views: Xuanxuan.Views;
 
+    /**
+     * 界面视图库
+     */
+    config: Xuanxuan.Config;
+    
     /**
      * 获取界面视图库
      */

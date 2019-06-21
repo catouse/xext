@@ -47,6 +47,11 @@ export * from './app';
 export * from './views';
 
 /**
+ * 应用配置模块
+ */
+export * from './config';
+
+/**
  * 全局扩展访问对象
  */
 export default global.Xext;
