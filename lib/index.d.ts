@@ -36,6 +36,10 @@ export * from './app';
  * 界面视图库
  */
 export * from './views';
+/**
+ * 应用配置模块
+ */
+export * from './config';
 declare const _default: Xext;
 /**
  * 全局扩展访问对象
